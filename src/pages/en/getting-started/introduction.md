@@ -4,22 +4,71 @@ description: Meteor introduction
 layout: ../../../layouts/MainLayout.astro
 ---
 
-## What is Meteor?
+## What is MeteorJS?
 
-Meteor is a battle-tested full stack JavaScript framework for developing cross-platform apps.
+MeteorJS is a fullstack JavaScript framework for developing cross-platform web apps using a unique codebase, it has been
+used in production grade apps for the last 10 years.
 
-## Key Features: 
+It is a complete platform with a set of tools and libraries that allow you to build apps faster and with less code.
+MeteorJS is known for apps that can have real-time capabilities and are easy to build, easy to maintain, and easy to
+scale.
 
-- Optimistic UI out-of-the-box.
+A few examples apps made with MeteorJS are RocketChat, CodeSignal, WeKan, Favro, MeteorCloud and many more, you can
+check a bigger list [here](https://www.meteor.com/developers/showcase).
+
+## Key Features:
+
+- Isomorphic code and full integration with the JavaScript/TypeScript ecosystem.
 - Built-in authentication system.
-- Isomorphic code: JS everywhere.
+- Easy fullstack development with [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) and DDP
+- MongoDB configured out of the box
+- UI Agnostic (you can use React, Vue, Svelte, Blaze, etc...)
+- Without configuration real-time capabilities
+- Fast development with hot code push
+- Easy to scale & deploy with Meteor Galaxy using meteor CLI
+- Optimistic UI out-of-the-box.
 
+## Design Goals
 
-## Design Goals and Features
+- Extraordinary productivity and Developer experience.
+- Performance and Scalability.
+- Isomorphic code.
 
-- Productivity and Developer experience.
-- Embraces the ecosystem Gathers the best parts of the extremely active JavaScript community to you in a careful and considered way.
-- Sharable code, code can be reused on the client and server.
-- UI-Agnostic: we support frameworks using ``vite``
+## How MeteorJS is different from other frameworks?
 
+First of all, MeteorJS is opinionated on how you should run your server. As for the frontend, you can use any framework
+you want.
+As default, we use MongoDB, but you can fairly easy integrate with any Database that you want.
 
+What MeteorJS brings to the table as a server side javascript framework is how it handles the client-server
+communication.
+There is nothing better than showing images:
+
+Traditional apps:
+![Traditional Apps.](/introduction-imgs/traditional_apps.png)
+
+Is just a client made with any JavaScript framework communicating with a server using REST API recivieng requests and
+giving responses back. It is a very common way to build apps, but it has some problems:
+
+- You need to write a lot of code to handle the requests and responses.
+- You need to write a lot of code to handle the authentication.
+- You need to write a lot of code to handle the data validation.
+- Your server may want to send data to the client.
+
+In MeteorJS apps:
+
+![MeteorJS Apps.](/introduction-imgs/meteor_apps.png)
+
+You can see that the client is communicating with the server using DDP (Distributed Data Protocol), it is a protocol
+that MeteorJS uses to communicate with the server. It uses WebSockets to communicate under the hood. It is a
+bidirectional protocol, so the server can send data to the client without the client asking for it.
+
+Also, because we are in one big JavaScript codebase, we can use the same code to run on the server and on the client:
+for
+example, we can use the same code to validate data on the server and on the client.
+
+### RPCs
+
+MeteorJS can use RPCs (Remote Procedure Calls) to communicate with the server. It is a way to call a function on the server
+from the client. It is a very common way to communicate with the server, but MeteorJS has some nice features that make
+it really simple to use RPCs. On the docs you can see them being referred as Meteor Methods.
