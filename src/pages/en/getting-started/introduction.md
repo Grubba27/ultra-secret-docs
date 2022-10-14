@@ -69,6 +69,21 @@ example, we can use the same code to validate data on the server and on the clie
 
 ### RPCs
 
-MeteorJS can use RPCs (Remote Procedure Calls) to communicate with the server. It is a way to call a function on the server
+MeteorJS can use RPCs (Remote Procedure Calls) to communicate with the server. It is a way to call a function on the
+server
 from the client. It is a very common way to communicate with the server, but MeteorJS has some nice features that make
-it really simple to use RPCs. On the docs you can see them being referred as Meteor Methods.
+it really simple to use RPCs.
+
+On the docs you can see them being referred as Meteor Methods.
+
+### Publications
+
+MeteorJS can use Publications to communicate with the server. It is a way to send data from the server to the client.
+The idiomatic way of doing this is by calling your mongo collection and using the `.find()` method. MeteorJS has some
+nice features that make it really simple to use Publications.
+
+On the docs you can see them being referred as Meteor
+Publications.
+
+You can think of them like having a Subscription to a collection on the client. whenever the data changes on the server
+it will be updated on the client.
