@@ -25,6 +25,17 @@ __Windows (needs node.js 14):__
 npm install -g meteor
 ```
 
+## Creating your first app
+
+To create your first app(by default is React app), run the following command in the directory where you want to create
+your app:
+
+```bash
+
+```bash
+meteor create my-app
+```
+
 ## Troubleshooting
 
 ### Prerequisites and useful information
@@ -65,6 +76,63 @@ running ``nvm use 14``.
 
 ## Templates
 
-We have some templates & something
+When you create a new Meteor project, you can choose between a few templates by using their flag.
+
+`--bare`
+
+Creates a basic, blaze project.
+
+`--full`
+
+Creates a more complete, imports-based project which
+closely matches the [file structure](https://guide.meteor.com/structure.html#javascript-structure) recommended by the
+[Meteor Guide](https://guide.meteor.com/)
+
+`--minimal`
+
+Creates a project with as few Meteor Packages as possible.
+
+`--package`
+
+Creates a new package. If used in an
+existing app, this command will create a package in the packages
+directory.
+
+`--typescript`
+
+Create a basic [Typescript](https://guide.meteor.com/build-tool.html#typescript)
+React-based app. Can be combined with other flags to use a different UI than
+React.
+
+`--apollo`
+
+Create a basic [Apollo + React](https://www.apollographql.com/) app.
+
+**Flags for default UI libraries / frameworks**
+
+`--blaze`
+
+Create a basic [Blaze](https://blazejs.org/) app.
+
+`--vue`
+
+Create a basic vue-based app. See the [Vue guide](https://guide.meteor.com/vue.html)
+for more information.
+
+`--svelte`
+
+Create a basic [Svelte](https://svelte.dev/) app.
+
+`--tailwind`
+
+Create a basic [React](https://reactjs.org) + [Tailwind CSS](https://tailwindcss.com) app.
+
+`--chakra-ui`
+
+Create a basic [chakra-ui](https://chakra-ui.com/) app.
+
+`--solid`
+
+Create a basic [solid](https://www.solidjs.com/) app.
 
 Good luck out there, Astronaut. 🧑‍🚀
