@@ -87,3 +87,8 @@ Publications.
 
 You can think of them like having a Subscription to a collection on the client. whenever the data changes on the server
 it will be updated on the client.
+
+## About the guide
+
+This guide is a work in progress, it is being written by the community, and it is open to contributions. 
+Also, there is the API docs that you can check [here](https://docs.meteor.com/) if you want to have the full description about the API. 
